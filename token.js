@@ -7,9 +7,8 @@
 fetch("https://chouette.doclai.com/security/user/authenticate", {
   mode: 'no-cors',
   method: "POST",
-  auth: {
-    username: api-user,
-    password: vJp-psHKLmQNXmS3_j7e
+  headers: {
+            'Authorization': 'Basic ' + btoa('api-user:vJp-psHKLmQNXmS3_j7e')
   }
   
 })
