@@ -7,9 +7,10 @@
 fetch("https://chouette.doclai.com/security/user/authenticate", {
   mode: 'no-cors',
   method: "POST",
-  headers: {
-            'Authorization': 'Basic ' + btoa('api-user:vJp-psHKLmQNXmS3_j7e')
-  }
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Basic ${btoa('api-user:vJp-psHKLmQNXmS3_j7e')}`,
+    }
   
 })
 .then(res => res.json())
